@@ -1,0 +1,9 @@
+[Builder]
+build = 504
+
+[Package info]
+revision = "40546f0f732333759889dda90608bddafd07ed81"
+edition = "CE"
+version = "4.9.7"
+encoder-version = ""
+timestamp = "2016-01-19 17:21:08"

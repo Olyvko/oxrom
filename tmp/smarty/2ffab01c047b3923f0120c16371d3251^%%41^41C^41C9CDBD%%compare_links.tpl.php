@@ -1,0 +1,15 @@
+<?php /* Smarty version 2.6.28, created on 2016-03-13 19:33:06
+         compiled from widget/product/compare_links.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'oxaddparams', 'widget/product/compare_links.tpl', 2, false),array('modifier', 'cat', 'widget/product/compare_links.tpl', 2, false),array('function', 'oxmultilang', 'widget/product/compare_links.tpl', 2, false),)), $this); ?>
+<?php $this->assign('_additionalParams', $this->_tpl_vars['oView']->getAdditionalParams()); ?>
+<a class="compare remove clear" data-aid="<?php echo $this->_tpl_vars['_compare_aid']; ?>
+" id="removeCmp<?php echo $this->_tpl_vars['_compare_testid']; ?>
+" href="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oView']->getLink())) ? $this->_run_mod_handler('oxaddparams', true, $_tmp, "am=1&amp;removecompare=1&amp;fnc=tocomparelist&amp;aid=".($this->_tpl_vars['_compare_aid'])."&amp;anid=".($this->_tpl_vars['_compare_anid'])."&amp;pgNr=".($this->_tpl_vars['_compare_page'])."&amp;".($this->_tpl_vars['_additionalParams'])) : smarty_modifier_oxaddparams($_tmp, "am=1&amp;removecompare=1&amp;fnc=tocomparelist&amp;aid=".($this->_tpl_vars['_compare_aid'])."&amp;anid=".($this->_tpl_vars['_compare_anid'])."&amp;pgNr=".($this->_tpl_vars['_compare_page'])."&amp;".($this->_tpl_vars['_additionalParams']))))) ? $this->_run_mod_handler('cat', true, $_tmp, "&amp;stoken=") : smarty_modifier_cat($_tmp, "&amp;stoken=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getSessionChallengeToken()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getSessionChallengeToken())); ?>
+" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'REMOVE_FROM_COMPARE_LIST'), $this);?>
+</a>
+<a class="compare add clear" data-aid="<?php echo $this->_tpl_vars['_compare_aid']; ?>
+" id="toCmp<?php echo $this->_tpl_vars['_compare_testid']; ?>
+" href="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['oView']->getLink())) ? $this->_run_mod_handler('oxaddparams', true, $_tmp, "am=1&amp;addcompare=1&amp;fnc=tocomparelist&aid=".($this->_tpl_vars['_compare_aid'])."&amp;anid=".($this->_tpl_vars['_compare_anid'])."&amp;pgNr=".($this->_tpl_vars['_compare_page'])."&amp;".($this->_tpl_vars['_additionalParams'])) : smarty_modifier_oxaddparams($_tmp, "am=1&amp;addcompare=1&amp;fnc=tocomparelist&aid=".($this->_tpl_vars['_compare_aid'])."&amp;anid=".($this->_tpl_vars['_compare_anid'])."&amp;pgNr=".($this->_tpl_vars['_compare_page'])."&amp;".($this->_tpl_vars['_additionalParams']))))) ? $this->_run_mod_handler('cat', true, $_tmp, "&amp;stoken=") : smarty_modifier_cat($_tmp, "&amp;stoken=")))) ? $this->_run_mod_handler('cat', true, $_tmp, $this->_tpl_vars['oViewConf']->getSessionChallengeToken()) : smarty_modifier_cat($_tmp, $this->_tpl_vars['oViewConf']->getSessionChallengeToken())); ?>
+" rel="nofollow"><?php echo smarty_function_oxmultilang(array('ident' => 'COMPARE'), $this);?>
+</a>

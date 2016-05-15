@@ -1,0 +1,1 @@
+a:6:{s:10:"invoicepdf";s:13:"oe/invoicepdf";s:8:"oepaypal";s:11:"oe/oepaypal";s:15:"oethemeswitcher";s:18:"oe/oethemeswitcher";s:13:"oxpspaymorrow";s:14:"oxps/paymorrow";s:9:"paydirekt";s:9:"paydirekt";s:21:"oxid-module-internals";s:21:"oxid-module-internals";}

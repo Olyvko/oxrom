@@ -1,0 +1,110 @@
+oxException (time: 2016-03-13 19:34:58): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxemail.php(2078): oxNew('oxException')
+#4 /var/www/oxid/core/oxemail.php(414): oxEmail->_sendMail()
+#5 /var/www/oxid/core/oxemail.php(711): oxEmail->send()
+#6 /var/www/oxid/application/components/oxcmp_user.php(527): oxEmail->sendRegisterEmail(Object(oxUser))
+#7 /var/www/oxid/application/components/oxcmp_user.php(550): oxcmp_user->createUser()
+#8 /var/www/oxid/core/oxview.php(522): oxcmp_user->registerUser()
+#9 /var/www/oxid/application/controllers/oxubase.php(641): oxView->executeFunction('registeruser')
+#10 /var/www/oxid/core/oxshopcontrol.php(407): oxUBase->init()
+#11 /var/www/oxid/core/oxshopcontrol.php(338): oxShopControl->_initializeViewObject('register', 'registeruser', NULL, NULL)
+#12 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('register', 'registeruser', NULL, NULL)
+#13 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#14 /var/www/oxid/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2016-05-14 17:36:10): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('zsPaydirektServ...')
+#5 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#6 /var/www/oxid/modules/paydirekt/controllers/zspaydirektdispatcher.php(33): oxNew('zsPaydirektServ...')
+#7 /var/www/oxid/modules/paydirekt/controllers/zspaydirekstandarddispatcher.php(74): zsPaydirektDispatcher->getPaydirektCheckoutService()
+#8 /var/www/oxid/core/oxview.php(522): zsPaydirektStandardDispatcher->getExpressCheckoutDetails()
+#9 /var/www/oxid/core/oxshopcontrol.php(347): oxView->executeFunction('getExpressCheck...')
+#10 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('zsPaydirektStan...', 'getExpressCheck...', NULL, NULL)
+#11 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#12 /var/www/oxid/index.php(26): Oxid::run()
+#13 {main}
+
+ Faulty component --> zspaydirektservice
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2016-05-14 18:46:28): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('zsPaydirektSetE...')
+#5 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#6 /var/www/oxid/modules/paydirekt/controllers/zspaydirekstandarddispatcher.php(32): oxNew('zsPaydirektSetE...')
+#7 /var/www/oxid/core/oxview.php(522): zsPaydirektStandardDispatcher->setExpressCheckout()
+#8 /var/www/oxid/core/oxshopcontrol.php(347): oxView->executeFunction('setExpressCheck...')
+#9 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('zsPaydirektStan...', 'setExpressCheck...', NULL, NULL)
+#10 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#11 /var/www/oxid/index.php(26): Oxid::run()
+#12 {main}
+
+ Faulty component --> zspaydirektsetexpresscheckoutrequestbuilder
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2016-05-14 18:47:01): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('zsPaydirektSetE...')
+#5 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#6 /var/www/oxid/modules/paydirekt/controllers/zspaydirekstandarddispatcher.php(32): oxNew('zsPaydirektSetE...')
+#7 /var/www/oxid/core/oxview.php(522): zsPaydirektStandardDispatcher->setExpressCheckout()
+#8 /var/www/oxid/core/oxshopcontrol.php(347): oxView->executeFunction('setExpressCheck...')
+#9 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('zsPaydirektStan...', 'setExpressCheck...', NULL, NULL)
+#10 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#11 /var/www/oxid/index.php(26): Oxid::run()
+#12 {main}
+
+ Faulty component --> zspaydirektsetexpresscheckoutrequestbuilder
+---------------------------------------------
+oxException (time: 2016-05-14 19:01:08): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxemail.php(2078): oxNew('oxException')
+#4 /var/www/oxid/core/oxemail.php(414): oxEmail->_sendMail()
+#5 /var/www/oxid/core/oxemail.php(565): oxEmail->send()
+#6 /var/www/oxid/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /var/www/oxid/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /var/www/oxid/application/controllers/order.php(248): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /var/www/oxid/core/oxview.php(522): order->execute()
+#10 /var/www/oxid/core/oxshopcontrol.php(347): oxView->executeFunction('execute')
+#11 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#13 /var/www/oxid/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2016-05-14 19:01:08): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /var/www/oxid/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /var/www/oxid/core/oxfunctions.php(371): call_user_func_array(Array, Array)
+#3 /var/www/oxid/core/oxemail.php(2078): oxNew('oxException')
+#4 /var/www/oxid/core/oxemail.php(414): oxEmail->_sendMail()
+#5 /var/www/oxid/core/oxemail.php(637): oxEmail->send()
+#6 /var/www/oxid/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /var/www/oxid/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /var/www/oxid/application/controllers/order.php(248): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /var/www/oxid/core/oxview.php(522): order->execute()
+#10 /var/www/oxid/core/oxshopcontrol.php(347): oxView->executeFunction('execute')
+#11 /var/www/oxid/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /var/www/oxid/core/oxid.php(40): oxShopControl->start()
+#13 /var/www/oxid/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
