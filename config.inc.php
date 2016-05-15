@@ -19,7 +19,7 @@
  * @copyright (C) OXID eSales AG 2003-2016
  * @version   OXID eShop CE
  */
-
+//1
     /** @name database information */
     $this->dbHost = 'localhost'; // database host name
     $this->dbName = 'oxid'; // database name
